@@ -83,3 +83,40 @@ public class Demo{
    { System.out.println("Hello from edureka!");}
 }
 
+Compile a Java Program
+You need to save your Java Program by the name of the class containing main() method along with .java extension.
+
+className.java
+Call the compiler using javac command.
+javac className
+Finally, execute the program using below code:
+java className
+
+Flow Of Control
+
+Iterative Statements
+Iterative statements are used when you need to repeat a set of statements until the condition for termination is not met.
+
+// for loop
+for (condition) {expression}
+// for each loop
+for (int i: someArray) {}  
+// while loop
+while (condition) {expression} 
+// do while loop
+do {expression} while(condition)
+
+Generating a Fibonacci series.
+for (i = 1; i <= n; ++i)
+{System.out.print(t1 + " + ");
+int sum = t1 + t2;
+t1 = t2;
+t2 = sum;}
+
+Creating a pyramid pattern.
+k = 2*n - 2;
+for(i=0; i<n; i++)
+{ for(j=0; j<k; j++){System.out.print(" ");}
+k = k - 1;
+for(j=0; j<=i; j++ ){System.out.print("* ");}
+System.out.println(); }
