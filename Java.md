@@ -55,3 +55,31 @@ String str = String.valueOf(value);
 // String to Numeric values
 int i = Integer.parseInt(str);
 double d = Double.parseDouble(str);
+
+User Input
+Java provides three ways to take an input from the user/ console:
+1.	Using BufferReader class
+2.	Using Scanner class
+3.	Using Console class
+
+// Using BufferReader
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+String name = reader.readLine();
+// Using Scanner
+Scanner in = new Scanner(System.in);
+String s = in.nextLine();
+int a = in.nextInt();
+// Using Console
+String name = System.console().readLine();
+
+Basic Java Program
+A basic program in Java will consist of at least the following components:
+1.	Classes & Objects
+2.	Methods
+3.	Variables
+
+public class Demo{ 
+  public static void main(String[] args) 
+   { System.out.println("Hello from edureka!");}
+}
+
