@@ -44,7 +44,7 @@ The process of changing a value from one data type to another type is known as d
 1.	Widening: The lower size datatype is converted into a higher size data type without loss of information.
 2.	Narrowing: The higher size datatype is converted into a lower size data type with a loss of information.
 
-// Widening (byte<short<int<long<float<double)
+```java // Widening (byte<short<int<long<float<double)
 int i = 10; //int--> long
 long l = i; //automatic type conversion
 // Narrowing 
@@ -55,6 +55,7 @@ String str = String.valueOf(value);
 // String to Numeric values
 int i = Integer.parseInt(str);
 double d = Double.parseDouble(str);
+```
 
 ## User Input
 Java provides three ways to take an input from the user/ console:
@@ -62,7 +63,7 @@ Java provides three ways to take an input from the user/ console:
 2.	Using Scanner class
 3.	Using Console class
 
-// Using BufferReader
+```java // Using BufferReader
 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 String name = reader.readLine();
 // Using Scanner
@@ -71,6 +72,7 @@ String s = in.nextLine();
 int a = in.nextInt();
 // Using Console
 String name = System.console().readLine();
+```
 
 ## Basic Java Program
 A basic program in Java will consist of at least the following components:
@@ -78,26 +80,28 @@ A basic program in Java will consist of at least the following components:
 2.	Methods
 3.	Variables
 
-public class Demo{ 
+```java public class Demo{ 
   public static void main(String[] args) 
    { System.out.println("Hello from edureka!");}
 }
+```
 
 ## Compile a Java Program
 You need to save your Java Program by the name of the class containing main() method along with .java extension.
 
-className.java
+```java className.java
 Call the compiler using javac command.
 javac className
 Finally, execute the program using below code:
 java className
+```
 
 ## Flow Of Control
 
 ### Iterative Statements
 Iterative statements are used when you need to repeat a set of statements until the condition for termination is not met.
 
-// for loop
+```java // for loop
 for (condition) {expression}
 // for each loop
 for (int i: someArray) {}  
@@ -105,92 +109,104 @@ for (int i: someArray) {}
 while (condition) {expression} 
 // do while loop
 do {expression} while(condition)
+```
 
 Generating a Fibonacci series.
-for (i = 1; i <= n; ++i)
+```java for (i = 1; i <= n; ++i)
 {System.out.print(t1 + " + ");
 int sum = t1 + t2;
 t1 = t2;
 t2 = sum;}
+```
 
 Creating a pyramid pattern.
-k = 2*n - 2;
+```java k = 2*n - 2;
 for(i=0; i<n; i++)
 { for(j=0; j<k; j++){System.out.print(" ");}
 k = k - 1;
 for(j=0; j<=i; j++ ){System.out.print("* ");}
 System.out.println(); }
+```
 
 ### Decisive Statements
 Selection statements used when you need to choose between alternative actions during execution of the program.
 
-//if statement
+```java //if statement
 if (condition) {expression} 
 //if-else statement
 if (condition) {expression} else {expression} 
 //switch statement
 switch (var) 
 { case 1: expression; break; default: expression; break; }
+```
 
 Checking the given number is prime or not.
-if (n < 2) { return false; } 
+```java if (n < 2) { return false; } 
 for (int i=2; i <= n/i; i++) 
 {if (n%i == 0) return false;}
 return true;
+```
 
 Finding the factorial using recursion function.
-int factorial(int n)
+```java int factorial(int n)
  { 
    if (n == 0)
        {return 1;}       
    else 
        {return(n * factorial(n-1));}       
  }    
+```
 
 ## Java Arrays
 
 ### Single Dimensional (1-D)
 Single Dimensional or 1-D array is a type of linear array in which elements are stored in a continuous row.
 
-// Initializing
+```java // Initializing
 type[] varName= new type[size];
 // Declaring
 type[] varName= new type[]{values1, value2,...};
+```
 
 Creating an array with random values.
-double[] arr = new double[n];
+```java double[] arr = new double[n];
 for (int i=0; i<n; i++)
 {a[i] = Math.random();}
+```
 
 Searching the max value in the array.
-double max = 0;
+```java double max = 0;
 for(int i=0; i<arr.length(); i++)
  { if(a[i] > max) max = a[i]; }
+```
 
 Reversing an array.
-for(int i=0; i<(arr.length())/2; i++)
+```java for(int i=0; i<(arr.length())/2; i++)
  { double temp = a[i];
    a[i] = a[n-1-i]; 
    a[n-1-i] = temp;
   }
+```
 
 ### Multi Dimensional (2-D)
 Two Dimensional or 2-D array is an array of an array where elements are stored in rows and columns.
 
-// Initializing
+```java // Initializing
 datatype[][] varName  =  new dataType[row][col];
 // Declaring
 datatype[][] varName  =  {{value1, value2....},{value1, value2....}..};
+```
 
 Transposing a matrix.
-for(i = 0; i < row; i++)
+```java for(i = 0; i < row; i++)
 { for(j = 0; j < column; j++)
   { System.out.print(array[i][j]+" "); }
   System.out.println(" ");
 }
+```
 
 Multiplying two matrices.
-for (i = 0; i < row1; i++)
+```java for (i = 0; i < row1; i++)
 { for (j = 0; j < col2; j++)
   { for (k = 0; k < row2; k++)
     { sum = sum + first[i][k]*second[k][j]; } 
@@ -198,6 +214,7 @@ for (i = 0; i < row1; i++)
    sum = 0;
   }
 }
+```
 
 ## Java Strings
 
@@ -215,7 +232,7 @@ The java.lang.String class implements Serializable, Comparable and CharSequence 
 ### String Methods
 Few of the most important and frequently used String methods are listed below:
 
-str1==str2 //compares address;
+```java str1==str2 //compares address;
 String newStr = str1.equals(str2); //compares the values
 String newStr = str1.equalsIgnoreCase() //compares the values ignoring the case
 newStr = str1.length() //calculates length
@@ -228,3 +245,4 @@ newStr = str1.contains("value"); //check for the values
 newStr = str1.toCharArray(); // convert String to character type array
 newStr = str1.IsEmpty(); //Check for empty String
 newStr = str1.endsWith(); //Checks if string ends with the given suffix
+```
