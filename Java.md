@@ -15,15 +15,16 @@ Java is a high-level, general-purpose programming language that produces softwar
 | Boolean	| 1		    | True, False                                            |
 
 ## Java Operators
-Operator Type			Operators
-Arithmetic				+, – , *, ? , %
-Assignment				=, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>=, >>>=
-Bitwise					^, &, |
-Logical 					&&, ||
-Relational				<, >, <=, >=,==, !=
-Shift					<<, >>, >>>
-Ternary					?:
-Unary					++x, –x, x++, x–, +x, –x, !, ~
+| Operator Type			| Operators                                         | 
+|-------------------|---------------------------------------------------| 
+| Arithmetic				| +, – , *, %, ?                                    |  
+| Assignment				| =, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>=, >>>= | 
+| Bitwise					  | ^, &, |                                           | 
+| Logical 					| &&, ||                                            | 
+| Relational				| <, >, <=, >=,==, !=                               | 
+| Shift					    | <<, >>, >>>                                       | 
+| Ternary					  | ?:                                                | 
+| Unary					    | ++x, –x, x++, x–, +x, –x, !, ~                    | 
 
 ## Java Variables
 Variables in Java refers to the name of the reserved memory area. You need variables to store any value for the computational or reference purpose.
