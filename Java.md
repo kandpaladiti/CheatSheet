@@ -1,8 +1,8 @@
-Java Programming
+# Java Programming
 
 Java is a high-level, general-purpose programming language that produces software for multiple platforms. It was developed by James Gosling in 1991 and released by Sun Microsystems in 1996 and is currently owned by Oracle.
 
-Primitive Data Types
+## Primitive Data Types
 Type		Size		Range
 byte		8 		-128..127
 short		16             	 -32, 768..32, 767
@@ -13,7 +13,7 @@ double		64		1.7e-308.. 1.7e+308
 char		16		Complete Unicode Character Set
 Boolean	1		True, False
 
-Java Operators
+## Java Operators
 Operator Type			Operators
 Arithmetic				+, – , *, ? , %
 Assignment				=, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>=, >>>=
@@ -24,7 +24,7 @@ Shift					<<, >>, >>>
 Ternary					?:
 Unary					++x, –x, x++, x–, +x, –x, !, ~
 
-Java Variables
+## Java Variables
 Variables in Java refers to the name of the reserved memory area. You need variables to store any value for the computational or reference purpose.
 There are 3 types of variable in Java:
 1.	Local Variables
@@ -32,14 +32,14 @@ There are 3 types of variable in Java:
 3.	Static Variables
 {public  |  private}  [static]  type name  [= expression  |  value];
 
-Java Methods
+## Java Methods
 A method is a set of code that is grouped together to perform a specific operation. A method is completed in two steps:
 1.	Method Initialization
 2.	Method Invocation
 A method can be invoked either by calling it by reference or by value.
 {public | private} [static] {type | void} name(arg1, ..., argN ){statements}
 
-Data Conversion
+## Data Conversion
 The process of changing a value from one data type to another type is known as data type conversion. Data Type conversion is of two types:
 1.	Widening: The lower size datatype is converted into a higher size data type without loss of information.
 2.	Narrowing: The higher size datatype is converted into a lower size data type with a loss of information.
@@ -56,7 +56,7 @@ String str = String.valueOf(value);
 int i = Integer.parseInt(str);
 double d = Double.parseDouble(str);
 
-User Input
+## User Input
 Java provides three ways to take an input from the user/ console:
 1.	Using BufferReader class
 2.	Using Scanner class
@@ -72,7 +72,7 @@ int a = in.nextInt();
 // Using Console
 String name = System.console().readLine();
 
-Basic Java Program
+## Basic Java Program
 A basic program in Java will consist of at least the following components:
 1.	Classes & Objects
 2.	Methods
@@ -83,7 +83,7 @@ public class Demo{
    { System.out.println("Hello from edureka!");}
 }
 
-Compile a Java Program
+## Compile a Java Program
 You need to save your Java Program by the name of the class containing main() method along with .java extension.
 
 className.java
@@ -92,9 +92,9 @@ javac className
 Finally, execute the program using below code:
 java className
 
-Flow Of Control
+## Flow Of Control
 
-Iterative Statements
+### Iterative Statements
 Iterative statements are used when you need to repeat a set of statements until the condition for termination is not met.
 
 // for loop
@@ -121,7 +121,7 @@ k = k - 1;
 for(j=0; j<=i; j++ ){System.out.print("* ");}
 System.out.println(); }
 
-Decisive Statements
+### Decisive Statements
 Selection statements used when you need to choose between alternative actions during execution of the program.
 
 //if statement
@@ -147,9 +147,9 @@ int factorial(int n)
        {return(n * factorial(n-1));}       
  }    
 
-Java Arrays
+## Java Arrays
 
-Single Dimensional (1-D)
+### Single Dimensional (1-D)
 Single Dimensional or 1-D array is a type of linear array in which elements are stored in a continuous row.
 
 // Initializing
@@ -174,7 +174,7 @@ for(int i=0; i<(arr.length())/2; i++)
    a[n-1-i] = temp;
   }
 
-Multi Dimensional (2-D)
+### Multi Dimensional (2-D)
 Two Dimensional or 2-D array is an array of an array where elements are stored in rows and columns.
 
 // Initializing
@@ -199,9 +199,9 @@ for (i = 0; i < row1; i++)
   }
 }
 
-Java Strings
+## Java Strings
 
-Creating a String
+### Creating a String
 String in Java is an object that represents a sequence of char values. A String can be created in two ways:
 1.	Using a literal
 2.	Using ‘new’ keyword
@@ -212,7 +212,7 @@ The java.lang.String class implements Serializable, Comparable and CharSequence 
 1.	StringBuffer: It is a mutable class that is thread-safe and synchronized.
 2.	StringBuilder: It is a mutable class that is not thread-safe but is faster and is used in a single threaded environment.
 
-String Methods
+### String Methods
 Few of the most important and frequently used String methods are listed below:
 
 str1==str2 //compares address;
