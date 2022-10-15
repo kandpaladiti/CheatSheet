@@ -198,3 +198,33 @@ for (i = 0; i < row1; i++)
    sum = 0;
   }
 }
+
+Java Strings
+
+Creating a String
+String in Java is an object that represents a sequence of char values. A String can be created in two ways:
+1.	Using a literal
+2.	Using ‘new’ keyword
+String str1 = “Welcome”; // Using literal
+String str2 = new String(”Edureka”); // Using new keyword
+
+The java.lang.String class implements Serializable, Comparable and CharSequence interfaces. Since the String object is immutable in nature Java provides two utility classes:
+1.	StringBuffer: It is a mutable class that is thread-safe and synchronized.
+2.	StringBuilder: It is a mutable class that is not thread-safe but is faster and is used in a single threaded environment.
+
+String Methods
+Few of the most important and frequently used String methods are listed below:
+
+str1==str2 //compares address;
+String newStr = str1.equals(str2); //compares the values
+String newStr = str1.equalsIgnoreCase() //compares the values ignoring the case
+newStr = str1.length() //calculates length
+newStr = str1.charAt(i) //extract i'th character
+newStr = str1.toUpperCase() //returns string in ALL CAPS
+newStr = str1.toLowerCase() //returns string in ALL LOWERvCASE
+newStr = str1.replace(oldVal, newVal) //search and replace
+newStr = str1.trim() //trims surrounding whitespace
+newStr = str1.contains("value"); //check for the values
+newStr = str1.toCharArray(); // convert String to character type array
+newStr = str1.IsEmpty(); //Check for empty String
+newStr = str1.endsWith(); //Checks if string ends with the given suffix
