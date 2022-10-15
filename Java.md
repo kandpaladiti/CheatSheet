@@ -174,3 +174,27 @@ for(int i=0; i<(arr.length())/2; i++)
    a[n-1-i] = temp;
   }
 
+Multi Dimensional (2-D)
+Two Dimensional or 2-D array is an array of an array where elements are stored in rows and columns.
+
+// Initializing
+datatype[][] varName  =  new dataType[row][col];
+// Declaring
+datatype[][] varName  =  {{value1, value2....},{value1, value2....}..};
+
+Transposing a matrix.
+for(i = 0; i < row; i++)
+{ for(j = 0; j < column; j++)
+  { System.out.print(array[i][j]+" "); }
+  System.out.println(" ");
+}
+
+Multiplying two matrices.
+for (i = 0; i < row1; i++)
+{ for (j = 0; j < col2; j++)
+  { for (k = 0; k < row2; k++)
+    { sum = sum + first[i][k]*second[k][j]; } 
+   multiply[i][j] = sum;
+   sum = 0;
+  }
+}
