@@ -120,3 +120,57 @@ for(i=0; i<n; i++)
 k = k - 1;
 for(j=0; j<=i; j++ ){System.out.print("* ");}
 System.out.println(); }
+
+Decisive Statements
+Selection statements used when you need to choose between alternative actions during execution of the program.
+
+//if statement
+if (condition) {expression} 
+//if-else statement
+if (condition) {expression} else {expression} 
+//switch statement
+switch (var) 
+{ case 1: expression; break; default: expression; break; }
+
+Checking the given number is prime or not.
+if (n < 2) { return false; } 
+for (int i=2; i <= n/i; i++) 
+{if (n%i == 0) return false;}
+return true;
+
+Finding the factorial using recursion function.
+int factorial(int n)
+ { 
+   if (n == 0)
+       {return 1;}       
+   else 
+       {return(n * factorial(n-1));}       
+ }    
+
+Java Arrays
+
+Single Dimensional (1-D)
+Single Dimensional or 1-D array is a type of linear array in which elements are stored in a continuous row.
+
+// Initializing
+type[] varName= new type[size];
+// Declaring
+type[] varName= new type[]{values1, value2,...};
+
+Creating an array with random values.
+double[] arr = new double[n];
+for (int i=0; i<n; i++)
+{a[i] = Math.random();}
+
+Searching the max value in the array.
+double max = 0;
+for(int i=0; i<arr.length(); i++)
+ { if(a[i] > max) max = a[i]; }
+
+Reversing an array.
+for(int i=0; i<(arr.length())/2; i++)
+ { double temp = a[i];
+   a[i] = a[n-1-i]; 
+   a[n-1-i] = temp;
+  }
+
